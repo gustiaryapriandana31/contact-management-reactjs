@@ -14,6 +14,7 @@ import ContactDetail from './components/Page/Contacts/ContactDetail.jsx'
 import ContactEdit from './components/Page/Contacts/ContactEdit.jsx'
 import AddressCreate from './components/Page/Address/AddressCreate.jsx'
 import AddressEdit from './components/Page/Address/AddressEdit.jsx'
+import { RedirectUser } from './components/RedirectUser.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         {/* For Guest */}
         <Route element={<Layouts />}>
+          <Route index element={<RedirectUser />} />
           <Route path="register" element={<UserRegister/>}></Route>
           <Route path="login" element={<UserLogin/>}></Route>
         </Route>
