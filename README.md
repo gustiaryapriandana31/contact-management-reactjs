@@ -1,12 +1,44 @@
-# React + Vite
+Before following this project, I have previously cloned the GitHub repository for the Node.js RESTful API for contact management from the following repository:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/ProgrammerZamanNow/belajar-nodejs-restful-api
 
-Currently, two official plugins are available:
+After creating a new folder and cloning the Back-End project, which will be the API resource for the Contact Management System, here are the mandatory steps that must taking in order:
+# Set Up Back-End
+ #### 1. Install all dependencies needed with this command :
+    npm install
+ #### 2. After that, Running this command to use and generate prisma (an ORM in javascript that will be using in this project):
+    npx prisma generate
+ #### 3. Set up database with mysql (create a new database with name belajar_reactjs_contact_management)
+ #### 4. Doing database migration by editing the .env configuration file to adjust the database settings
+ <img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/6150a8f4-3869-4898-a0c2-f6d035e58351" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ #### 5. Running database migration with command 
+    npx prisma migrate dev
+ #### 6. Set up CORS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) with added library cors, following this command :
+    npm install cors
+ #### 7. After installing library cors, you need to add some code to web.js, here are the guides :
+ <img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/b27bf45e-7325-42d9-8a0f-cbf1771411a6" />
 
-## Expanding the ESLint configuration
+ #### 8. Finally, you can running the Backend project using command : 
+    node src/main.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+# Set Up Front-End
+#### 1. For creating new reactjs project, I could easily using this command :
+    npm create vite@latest belajar-reactjs-contact-management -- --template react
+
+#### 2. Don't forget to install all dependencies needed with command :
+    npm install
+
+#### 3. Next, install react router :
+    npm install react-router
+
+#### 4. In addition, this project uses a popular hooks library in ReactJS, namely “react-use” (https://github.com/streamich/react-use). We can directly install with command :
+    npm install react-use
+
+#### 5. Last, we will also use library sweetalert (https://sweetalert2.github.io/) to handle responses properly and more attractively. Following this command to install :
+    npm install sweetalert2
+
+# ~~~ Let's have fun with code ~~~ 
