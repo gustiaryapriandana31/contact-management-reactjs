@@ -1,6 +1,6 @@
-import { userLogout } from "../../lib/api/UserApi";
+import { userLogout } from "../../../lib/api/UserApi";
 import { useEffectOnce, useLocalStorage } from "react-use";
-import { alertError } from "../../lib/alert/sweetAlert";
+import { alertError } from "../../../lib/alert/sweetAlert";
 import { useNavigate } from "react-router";
 
 export default function UserLogout() {

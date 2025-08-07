@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useEffectOnce, useLocalStorage } from "react-use";
-import { contactList, contactDelete } from "../../lib/api/ContactApi";
-import { alertConfirm, alertError, alertSuccess } from "../../lib/alert/sweetAlert";
+import { contactList, contactDelete } from "../../../lib/api/ContactApi";
+import { alertConfirm, alertError, alertSuccess } from "../../../lib/alert/sweetAlert";
 import { Link } from "react-router";
 
 export default function ContactList() {

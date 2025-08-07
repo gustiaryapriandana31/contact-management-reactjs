@@ -1,8 +1,8 @@
 import { Link, useParams } from "react-router";
 import { useState } from "react";
-import { alertSuccess, alertError, alertConfirm } from "../../lib/alert/sweetAlert";
-import { contactDetail } from "../../lib/api/ContactApi";
-import { addressList, addressDelete } from "../../lib/api/AddressApi";
+import { alertSuccess, alertError, alertConfirm } from "../../../lib/alert/sweetAlert";
+import { contactDetail } from "../../../lib/api/ContactApi";
+import { addressList, addressDelete } from "../../../lib/api/AddressApi";
 import { useEffectOnce } from "react-use";
 import { useLocalStorage } from "react-use";
 
