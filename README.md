@@ -41,4 +41,26 @@ After creating a new folder and cloning the Back-End project, which will be the 
 #### 5. Last, we will also use library sweetalert (https://sweetalert2.github.io/) to handle responses properly and more attractively. Following this command to install :
     npm install sweetalert2
 
+
+## At the end of this project, there were some challenges that I had to complete to test my knowledge of Reactjs.
+#### 1. Implement Index Path
+        - Create a page for url "/"
+        - Check if the user is not logged in, then redirect to the /login page.
+        - If already logged in, then redirect to the /dashboard/contacts page.
+        
+#### 2. Session Validation in Dashboard
+        - For all /dashboard page.
+        - I have to validate the user again. If they are not logged in, redirect them to the /login page.
+
+#### 3. Modify Tailwindcss Installation
+        - Previously, this project only used tailwindcss using CDN.
+        - Now, I have to change it by installing tailwindcss using vite.
+
+#### 4. Using Reusable Component
+        - I have to separate some code into reusable components, because there are many code with the same content that was repeated.
+        - This must be done to clean up the code.
+
+#### 5. Optional Deployment 
+        - Deploy both of Back End and Front End applications so that can be accessed by public.
+
 # ~~~ Let's have fun with code ~~~ 
