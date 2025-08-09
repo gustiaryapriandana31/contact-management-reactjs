@@ -1,6 +1,20 @@
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useNavigate } from "react-router";
+import { useLocalStorage, useEffectOnce } from "react-use";
+import { alertError } from "../lib/alert/sweetAlert";
 
 export default function Dashboard() {
+
+    const navigate = useNavigate();
+    const [token, _] = useLocalStorage("token", "");
+
+    useEffectOnce(() => {
+        if(token === "") {
+            navigate("/login");
+            alertError("UNAUTHORIZED!!");
+            return;
+        }
+    });
+
     return <>
         <div>
             <header className="bg-gradient shadow-lg">

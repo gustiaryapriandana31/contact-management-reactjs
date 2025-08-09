@@ -14,7 +14,7 @@ export default function UserLogout() {
         console.log(responseBody);
 
         if(response.status === 200) {
-            setToken('');
+            setToken("");
             await navigate({
                 pathname: "/login"
             });

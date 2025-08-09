@@ -40,13 +40,15 @@ export default function ContactList() {
     async function fetchContacts() {
         const response = await contactList(token, {name, email, phone, page});
         const responseBody = await response.json();
-        console.log(responseBody);
+        console.log("ERROR");
+        // console.log(responseBody);
 
         if(response.status === 200) {
             setContacts(responseBody.data);
             setTotalPages(responseBody.paging.total_page);
         } else {
-            await alertError(responseBody.errors);
+            await alertError("HAI");
+            // await alertError(responseBody.errors);
         }
     }
 
